@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
     
     <meta
       name="description"
@@ -26,7 +27,6 @@
     <meta property="og:url" content="https://pernahdekat.com/" />
     <meta property="og:image" content="https://pernahdekat.com/assets/pernah-dekat-hero.webp" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/png" href="assets/logo-pernah-dekat.png" />
     <link rel="preload" as="image" href="assets/pernah-dekat-hero.webp" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
@@ -68,7 +68,7 @@
           "https://x.com/pernahdekat_sby",
           "https://www.tiktok.com/@pernahdekat.sby"
         ],
-        "Menu": "https://linktr.ee/PernahDekat",
+        "hasMenu": "https://linktr.ee/PernahDekat",
         "amenityFeature": [
           {
             "@type": "LocationFeatureSpecification",
@@ -92,6 +92,46 @@
           "contactType": "reservations",
           "availableLanguage": ["Indonesian"]
         }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Apakah Pernah Dekat cocok untuk nugas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya. Lantai 2 Pernah Dekat memiliki area indoor ber-AC yang nyaman untuk nugas, kerja fokus, atau diskusi kecil di kawasan Manyar, Surabaya."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah ada area smoking indoor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ada. Pernah Dekat memiliki area smoking indoor di lantai 3 untuk pengunjung yang ingin ngobrol lebih santai dan menikmati kopi lebih lama."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah bisa untuk event komunitas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bisa. Lantai 2 dan lantai 3 sering digunakan untuk event, gathering komunitas, nonton bareng, live music, atau diskusi kecil."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jam buka Pernah Dekat sampai jam berapa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pernah Dekat buka setiap hari dari pukul 10.00 pagi sampai 02.00 dini hari."
+            }
+          }
+        ]
       }
     </script>
   </head>
@@ -130,8 +170,8 @@
           <p class="eyebrow">Coffee shop dan kopitiam di Manyar, Surabaya</p>
           <h1>Ruang Temu dan Cerita di Manyar.</h1>
           <p class="hero-copy">
-            Lebih dari sekadar seduhan kopi. Kami adalah saksi untuk setiap tawa, kolaborasi, dan
-            obrolan yang pernah dekat.
+            Pernah Dekat adalah cafe dan kopitiam di Manyar, Surabaya. Lebih dari sekadar seduhan
+            kopi, kami adalah saksi untuk setiap tawa, kolaborasi, dan obrolan yang pernah dekat.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#fasilitas">Mari Merapat</a>
@@ -299,6 +339,41 @@
               <strong>ShopeeFood</strong>
             </a>
           </div>
+        </div>
+      </section>
+
+      <section class="faq section-band" id="faq" aria-labelledby="faq-title">
+        <div class="faq-intro">
+          <p class="eyebrow">Pertanyaan umum</p>
+          <h2 id="faq-title">Sebelum merapat ke Pernah Dekat.</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>Apakah Pernah Dekat cocok untuk nugas?</h3>
+            <p>
+              Ya. Lantai 2 memiliki area indoor ber-AC yang nyaman untuk nugas, kerja fokus, atau
+              diskusi kecil di kawasan Manyar, Surabaya.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Apakah ada area smoking indoor?</h3>
+            <p>
+              Ada. Area smoking indoor berada di lantai 3 untuk pengunjung yang ingin ngobrol lebih
+              santai dan menikmati kopi lebih lama.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Apakah bisa untuk event komunitas?</h3>
+            <p>
+              Bisa. Lantai 2 dan lantai 3 sering digunakan untuk event, gathering komunitas, nonton
+              bareng, live music, atau diskusi kecil.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Jam buka Pernah Dekat sampai jam berapa?</h3>
+            <p>Pernah Dekat buka setiap hari dari pukul 10.00 pagi sampai 02.00 dini hari.</p>
+          </article>
         </div>
       </section>
 
