@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "@id": "https://pernahdekat.com/#localbusiness",
+  "name": "Pernah Dekat",
+  "description": "Coffee shop, cafe, dan kopitiam di kawasan Manyar, Surabaya untuk kerja fokus, komunitas, dan nongkrong sampai larut malam.",
+  "url": "https://pernahdekat.com/",
+  "image": "https://pernahdekat.com/assets/pernah-dekat-hero.webp",
+  "telephone": "+6282289988224",
+  "openingDate": "2024-08-10",
+  "servesCuisine": ["Coffee", "Kopitiam", "Indonesian"],
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jalan Raya Manyar No. 29",
+    "addressLocality": "Surabaya",
+    "addressRegion": "Jawa Timur",
+    "postalCode": "60284",
+    "addressCountry": "ID"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Surabaya"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "10:00",
+      "closes": "02:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/pernahdekat.sby/",
+    "https://www.facebook.com/profile.php?id=61560710607414",
+    "https://x.com/pernahdekat_sby",
+    "https://www.tiktok.com/@pernahdekat.sby"
+  ],
+  "hasMenu": "https://linktr.ee/PernahDekat",
+  "amenityFeature": [
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Lantai 2 indoor AC untuk nugas dan kerja fokus",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Lantai 3 smoking indoor",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Area event di lantai 2 dan lantai 3",
+      "value": true
+    }
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+6282289988224",
+    "contactType": "reservations",
+    "availableLanguage": ["Indonesian", "English"]
+  }
+}

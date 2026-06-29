@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="map-title map-desc">
+  <title id="map-title">Peta manual sekitar Pernah Dekat</title>
+  <desc id="map-desc">Peta interaktif placeholder dengan titik Pernah Dekat dan landmark sekitar Manyar, Surabaya.</desc>
+  <style>
+    :root {
+      --paper: #fff8ef;
+      --ink: #241412;
+      --muted: #765f56;
+      --coffee: #8b0000;
+      --orange: #ff9300;
+      --line: rgba(36, 20, 18, .22);
+    }
+    .map-bg { fill: var(--paper); }
+    .district { fill: #fff0df; stroke: var(--line); stroke-width: 2; }
+    .road-main { fill: none; stroke: #8b0000; stroke-width: 30; stroke-linecap: round; opacity: .9; }
+    .road-secondary { fill: none; stroke: #d8ad82; stroke-width: 14; stroke-linecap: round; opacity: .9; }
+    .road-small { fill: none; stroke: #e8cbb1; stroke-width: 8; stroke-linecap: round; opacity: .9; }
+    .label { fill: var(--muted); font: 700 24px Arial, sans-serif; }
+    .shop-label { fill: var(--coffee); font: 900 34px Arial, sans-serif; }
+    .pin { fill: #fff8ef; stroke: var(--coffee); stroke-width: 7; }
+    .pin-core { fill: var(--orange); }
+    .landmark-dot { fill: #fff8ef; stroke: var(--coffee); stroke-width: 5; transition: transform .18s ease, fill .18s ease; transform-box: fill-box; transform-origin: center; }
+    .landmark-label { opacity: 0; fill: var(--ink); font: 800 26px Arial, sans-serif; pointer-events: none; transition: opacity .18s ease; }
+    .landmark-hit:hover .landmark-dot,
+    .landmark-hit:focus .landmark-dot { fill: var(--orange); transform: scale(1.18); }
+    .landmark-hit:hover .landmark-label,
+    .landmark-hit:focus .landmark-label { opacity: 1; }
+    .landmark-hit { cursor: pointer; outline: none; }
+    .compass { fill: none; stroke: var(--coffee); stroke-width: 4; }
+    @media (prefers-reduced-motion: reduce) {
+      .landmark-dot, .landmark-label { transition: none; }
+    }
+  </style>
+  <rect class="map-bg" width="1200" height="820" rx="34"/>
+  <path class="district" d="M90 125h1020v560H90z"/>
+  <path class="road-main" d="M120 535C260 492 360 470 510 470c210 0 320 74 570 52"/>
+  <path class="road-secondary" d="M310 150v560"/>
+  <path class="road-secondary" d="M770 128c-18 170-18 357 12 560"/>
+  <path class="road-small" d="M122 268h942"/>
+  <path class="road-small" d="M178 638h832"/>
+  <path class="road-small" d="M498 166c38 144 45 350 4 532"/>
+  <text class="label" x="138" y="250">Jl. Kertajaya</text>
+  <text class="label" x="150" y="510">Jl. Raya Manyar</text>
+  <text class="label" x="790" y="155">Arah Mulyorejo</text>
+  <g aria-label="Pernah Dekat" transform="translate(565 438)">
+    <path class="pin" d="M0-78c43 0 78 35 78 78 0 55-78 142-78 142S-78 55-78 0c0-43 35-78 78-78Z"/>
+    <circle class="pin-core" r="29"/>
+    <text class="shop-label" x="-125" y="178">Pernah Dekat</text>
+  </g>
+  <g class="landmark-hit" tabindex="0" data-landmark="Galaxy Mall" aria-label="Landmark Galaxy Mall">
+    <circle class="landmark-dot" cx="910" cy="255" r="24"/>
+    <text class="landmark-label" x="822" y="218">Galaxy Mall</text>
+  </g>
+  <g class="landmark-hit" tabindex="0" data-landmark="Kampus UNAIR" aria-label="Landmark Kampus UNAIR">
+    <circle class="landmark-dot" cx="730" cy="610" r="24"/>
+    <text class="landmark-label" x="626" y="672">Kampus UNAIR</text>
+  </g>
+  <g class="landmark-hit" tabindex="0" data-landmark="RS Manyar" aria-label="Landmark RS Manyar">
+    <circle class="landmark-dot" cx="402" cy="322" r="24"/>
+    <text class="landmark-label" x="322" y="290">RS Manyar</text>
+  </g>
+  <g class="landmark-hit" tabindex="0" data-landmark="Area Kuliner" aria-label="Landmark area kuliner">
+    <circle class="landmark-dot" cx="240" cy="628" r="24"/>
+    <text class="landmark-label" x="164" y="704">Area Kuliner</text>
+  </g>
+  <g transform="translate(1048 652)">
+    <circle class="compass" r="44"/>
+    <path class="compass" d="M0-28v56M-28 0h56"/>
+    <text class="label" x="-10" y="-55">N</text>
+  </g>
+</svg>
