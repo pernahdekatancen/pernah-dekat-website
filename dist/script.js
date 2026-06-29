@@ -67,3 +67,59 @@ window.addEventListener("resize", () => {
 year.textContent = new Date().getFullYear();
 syncHeader();
 requestRevealSync();
+
+// Reservation form submit handler
+const reservationForm = document.getElementById("reservationForm");
+if (reservationForm) {
+  reservationForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("resName").value;
+    const dateInput = document.getElementById("resDate").value;
+    const timeInput = document.getElementById("resTime").value;
+    const guests = document.getElementById("resGuests").value;
+    const area = document.getElementById("resArea").value;
+    const notes = document.getElementById("resNotes").value;
+
+    if (!name) {
+      alert("Nama wajib diisi / Name is required.");
+      return;
+    }
+
+    // Format date if present
+    let formattedDate = "Hari Ini";
+    const isEnglish = document.documentElement.lang === "en";
+    if (dateInput) {
+      const d = new Date(dateInput);
+      if (!isNaN(d.getTime())) {
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        formattedDate = d.toLocaleDateString(isEnglish ? 'en-US' : 'id-ID', options);
+      }
+    } else {
+      formattedDate = isEnglish ? "Today" : "Hari Ini";
+    }
+
+    let bookingText = "";
+    if (isEnglish) {
+      bookingText = `Hello, I'd like to reserve a table at Pernah Dekat Manyar Sby:
+- Name: ${name}
+- Date: ${formattedDate}
+- Time: ${timeInput || "Soon"}
+- Number of Guests: ${guests} pax
+- Table Area: ${area}
+- Notes: ${notes || "-"}`;
+    } else {
+      bookingText = `Halo Kak, saya ingin reservasi meja di Pernah Dekat Manyar Sby:
+- Nama: ${name}
+- Tanggal: ${formattedDate}
+- Jam: ${timeInput || "Segera"}
+- Jumlah Orang: ${guests} pax
+- Area Meja: ${area}
+- Catatan: ${notes || "-"}`;
+    }
+
+    const encodedText = encodeURIComponent(bookingText);
+    const waUrl = `https://wa.me/6282289988224?text=${encodedText}`;
+    window.open(waUrl, "_blank");
+  });
+}
+

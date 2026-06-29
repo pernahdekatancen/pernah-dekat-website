@@ -397,9 +397,50 @@
             Kami berada di Jalan Raya Manyar No. 29, Surabaya. Buka setiap hari sampai pukul 02.00
             untuk Anda yang butuh ruang kerja, ruang temu, atau tempat melepas penat.
           </p>
-          <a class="button primary" href="http://wa.me/6282289988224" target="_blank" rel="noreferrer">
-            Amankan Mejamu Hari Ini
-          </a>
+          <form class="reservation-form" id="reservationForm">
+            <div class="form-group">
+              <label for="resName">Nama <span class="required">*</span></label>
+              <input type="text" id="resName" name="name" required placeholder="Nama lengkap Anda" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resDate">Tanggal</label>
+                <input type="date" id="resDate" name="date" />
+              </div>
+              <div class="form-group">
+                <label for="resTime">Jam</label>
+                <input type="time" id="resTime" name="time" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resGuests">Jumlah Orang</label>
+                <select id="resGuests" name="guests">
+                  <option value="1">1 Orang</option>
+                  <option value="2" selected>2 Orang</option>
+                  <option value="3">3 Orang</option>
+                  <option value="4">4 Orang</option>
+                  <option value="6">5 - 6 Orang</option>
+                  <option value="8">7 - 8 Orang</option>
+                  <option value="12">8+ Orang (Meja Ramai)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="resArea">Area Meja</label>
+                <select id="resArea" name="area">
+                  <option value="Lantai 2 - Indoor AC">Lantai 2 - Indoor AC</option>
+                  <option value="Lantai 3 - Smoking Indoor">Lantai 3 - Smoking Indoor</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="resNotes">Catatan</label>
+              <textarea id="resNotes" name="notes" rows="3" placeholder="Catatan tambahan (opsional)"></textarea>
+            </div>
+            <button type="submit" class="button primary form-submit-btn">
+              Kirim Reservasi ke WhatsApp
+            </button>
+          </form>
         </div>
         <address class="nap-card">
           <span>Info Kedai</span>
