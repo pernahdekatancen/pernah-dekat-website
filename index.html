@@ -38,16 +38,20 @@
         "@type": "CafeOrCoffeeShop",
         "@id": "https://pernahdekat.com/#localbusiness",
         "name": "Pernah Dekat",
-        "description": "Coffee shop, cafe, dan kopitiam di kawasan Manyar, Surabaya untuk kerja fokus, komunitas, dan nongkrong sampai larut malam.",
+        "alternateName": "Kedai Pernah Dekat",
+        "description": "Kedai Pernah Dekat selalu menemani dengan santapan dalam setiap situasi hidupmu.",
         "url": "https://pernahdekat.com/",
-        "image": "https://pernahdekat.com/assets/pernah-dekat-hero.webp",
+        "image": "https://pernahdekat.com/assets/Bangunan.webp",
         "telephone": "+6282289988224",
         "openingDate": "2024-08-10",
         "servesCuisine": ["Coffee", "Kopitiam", "Indonesian"],
         "priceRange": "$$",
+        "acceptsReservations": true,
+        "paymentAccepted": "Cash, QRIS, Debit",
+        "currenciesAccepted": "IDR",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Jalan Raya Manyar No. 29",
+          "streetAddress": "Jl. Raya Manyar No. 29, Menur Pumpungan, Kec. Sukolilo",
           "addressLocality": "Surabaya",
           "addressRegion": "Jawa Timur",
           "postalCode": "60284",
@@ -61,8 +65,14 @@
           {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "10:00",
+            "opens": "00:00",
             "closes": "02:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "10:00",
+            "closes": "23:59"
           }
         ],
         "sameAs": [
@@ -75,17 +85,27 @@
         "amenityFeature": [
           {
             "@type": "LocationFeatureSpecification",
-            "name": "Lantai 2 indoor AC untuk nugas dan kerja fokus",
+            "name": "Lantai 2 ber-AC dan non-smoking",
             "value": true
           },
           {
             "@type": "LocationFeatureSpecification",
-            "name": "Lantai 3 smoking indoor",
+            "name": "Lantai 3 ber-AC dan smoking",
             "value": true
           },
           {
             "@type": "LocationFeatureSpecification",
-            "name": "Area event di lantai 2 dan lantai 3",
+            "name": "WiFi gratis",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Musholla",
+            "value": true
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "name": "Proyektor untuk acara",
             "value": true
           }
         ],
@@ -104,34 +124,74 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Apakah Pernah Dekat cocok untuk nugas?",
+            "name": "Di mana lokasi Kedai Pernah Dekat dan jam bukanya?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ya. Lantai 2 Pernah Dekat memiliki area indoor ber-AC yang nyaman untuk nugas, kerja fokus, atau diskusi kecil di kawasan Manyar, Surabaya."
+              "text": "Kedai Pernah Dekat berada di Jl. Raya Manyar No. 29, Menur Pumpungan, Kecamatan Sukolilo, Surabaya, Jawa Timur 60284. Kedai buka setiap hari pukul 10.00–02.00 dini hari, sehingga cocok untuk makan, bekerja, dan nongkrong malam di Surabaya."
             }
           },
           {
             "@type": "Question",
-            "name": "Apakah ada area smoking indoor?",
+            "name": "Apakah reservasi di Kedai Pernah Dekat memerlukan DP atau minimal pembelian?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ada. Pernah Dekat memiliki area smoking indoor di lantai 3 untuk pengunjung yang ingin ngobrol lebih santai dan menikmati kopi lebih lama."
+              "text": "Reservasi tidak memerlukan DP, minimum jumlah tamu, atau minimal spending tambahan. Ketentuannya, setiap orang memesan minimal satu makanan dan satu minuman. Pembayaran dilakukan langsung di outlet pada hari kunjungan."
             }
           },
           {
             "@type": "Question",
-            "name": "Apakah bisa untuk event komunitas?",
+            "name": "Bagaimana cara reservasi untuk acara atau buka bersama?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Bisa. Lantai 2 dan lantai 3 sering digunakan untuk event, gathering komunitas, nonton bareng, live music, atau diskusi kecil."
+              "text": "Reservasi dapat dilakukan melalui WhatsApp Kedai Pernah Dekat. Untuk acara ramai seperti buka bersama, reservasi lebih awal sangat disarankan karena kuota dapat penuh. Daftar pesanan bisa dikirim saat reservasi atau paling lambat H-1 sebelum kunjungan."
             }
           },
           {
             "@type": "Question",
-            "name": "Jam buka Pernah Dekat sampai jam berapa?",
+            "name": "Bagaimana pembagian lantai dan kapasitas acara di Kedai Pernah Dekat?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pernah Dekat buka setiap hari dari pukul 10.00 pagi sampai 02.00 dini hari."
+              "text": "Lantai 1 berada dekat kasir dan dapur. Lantai 2 ber-AC, non-smoking, dan dapat menampung hingga 30 orang. Lantai 3 ber-AC, merupakan area smoking, dan cocok untuk acara di atas 30 orang atau kebutuhan ruang privat, sesuai ketersediaan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah bisa mengadakan ulang tahun atau event dan membawa kue dari luar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bisa. Acara ulang tahun, gathering, dan event dapat diadakan dengan ketentuan setiap tamu memesan minimal satu makanan dan satu minuman. Tidak ada minimal spending tambahan, dan tamu diperbolehkan membawa kue tart dari luar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fasilitas apa saja yang tersedia untuk pengunjung dan acara?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kedai Pernah Dekat menyediakan WiFi gratis dan musholla. Untuk acara tersedia proyektor yang dapat digunakan sesuai ketersediaan. Kebutuhan teknis acara sebaiknya dikonfirmasi ketika melakukan reservasi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Metode pembayaran apa yang tersedia dan apakah pesanan bisa diubah?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pembayaran dilakukan di outlet pada hari kunjungan menggunakan cash, QRIS, atau kartu debit. Jumlah tamu dan pesanan masih dapat ditambah atau diubah; mohon konfirmasikan perubahan sesegera mungkin agar tempat dan pesanan dapat disiapkan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah Kedai Pernah Dekat melayani pemesanan dan pengiriman online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya. Pemesanan makanan secara online dan layanan pengiriman tersedia melalui GoFood, GrabFood, dan ShopeeFood. Cari Kedai Pernah Dekat di aplikasi pilihan Anda untuk melihat menu, harga, dan jangkauan pengiriman terbaru."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apa menu terlaris di Kedai Pernah Dekat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Menu terlaris Kedai Pernah Dekat adalah Menu Paket. Pilihan ini cocok untuk pengunjung yang ingin memesan makanan dan minuman sekaligus, termasuk untuk kebutuhan reservasi perorangan maupun acara bersama."
             }
           }
         ]
@@ -347,37 +407,48 @@
 
       <section class="faq section-band" id="faq" aria-labelledby="faq-title">
         <div class="faq-intro">
-          <p class="eyebrow">Pertanyaan umum</p>
-          <h2 id="faq-title">NO DP, NO RIBET</h2>
-          <p>Ruang bisa disiapkan tanpa proses yang bikin panjang. Tinggal cek kebutuhan, pilih area, lalu merapat.</p>
+          <p class="eyebrow">FAQ Kedai Pernah Dekat</p>
+          <h2 id="faq-title">Sebelum kamu merapat.</h2>
+          <p>Jawaban ringkas tentang lokasi, jam buka, reservasi, fasilitas, acara, pembayaran, dan pemesanan online.</p>
         </div>
 
         <div class="faq-list">
-          <article class="faq-item">
-            <h3>Apakah Pernah Dekat cocok untuk nugas?</h3>
-            <p>
-              Ya. Lantai 2 memiliki area indoor ber-AC yang nyaman untuk nugas, kerja fokus, atau
-              diskusi kecil di kawasan Manyar, Surabaya.
-            </p>
-          </article>
-          <article class="faq-item">
-            <h3>Apakah ada area smoking indoor?</h3>
-            <p>
-              Ada. Area smoking indoor berada di lantai 3 untuk pengunjung yang ingin ngobrol lebih
-              santai dan menikmati kopi lebih lama.
-            </p>
-          </article>
-          <article class="faq-item">
-            <h3>Apakah bisa untuk event komunitas?</h3>
-            <p>
-              Bisa. Lantai 2 dan lantai 3 sering digunakan untuk event, gathering komunitas, nonton
-              bareng, live music, atau diskusi kecil.
-            </p>
-          </article>
-          <article class="faq-item">
-            <h3>Jam buka Pernah Dekat sampai jam berapa?</h3>
-            <p>Pernah Dekat buka setiap hari dari pukul 10.00 pagi sampai 02.00 dini hari.</p>
-          </article>
+          <details class="faq-item" name="faq-kedai" open>
+            <summary>Di mana lokasi Kedai Pernah Dekat dan jam bukanya?</summary>
+            <p>Kedai Pernah Dekat berada di Jl. Raya Manyar No. 29, Menur Pumpungan, Kecamatan Sukolilo, Surabaya, Jawa Timur 60284. Kedai buka setiap hari pukul 10.00–02.00 dini hari, sehingga cocok untuk makan, bekerja, dan nongkrong malam di Surabaya.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Apakah reservasi di Kedai Pernah Dekat memerlukan DP atau minimal pembelian?</summary>
+            <p>Reservasi tidak memerlukan DP, minimum jumlah tamu, atau minimal spending tambahan. Ketentuannya, setiap orang memesan minimal satu makanan dan satu minuman. Pembayaran dilakukan langsung di outlet pada hari kunjungan.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Bagaimana cara reservasi untuk acara atau buka bersama?</summary>
+            <p>Reservasi dapat dilakukan melalui WhatsApp Kedai Pernah Dekat. Untuk acara ramai seperti buka bersama, reservasi lebih awal sangat disarankan karena kuota dapat penuh. Daftar pesanan bisa dikirim saat reservasi atau paling lambat H-1 sebelum kunjungan.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Bagaimana pembagian lantai dan kapasitas acara di Kedai Pernah Dekat?</summary>
+            <p>Lantai 1 berada dekat kasir dan dapur. Lantai 2 ber-AC, non-smoking, dan dapat menampung hingga 30 orang. Lantai 3 ber-AC, merupakan area smoking, dan cocok untuk acara di atas 30 orang atau kebutuhan ruang privat, sesuai ketersediaan.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Apakah bisa mengadakan ulang tahun atau event dan membawa kue dari luar?</summary>
+            <p>Bisa. Acara ulang tahun, gathering, dan event dapat diadakan dengan ketentuan setiap tamu memesan minimal satu makanan dan satu minuman. Tidak ada minimal spending tambahan, dan tamu diperbolehkan membawa kue tart dari luar.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Fasilitas apa saja yang tersedia untuk pengunjung dan acara?</summary>
+            <p>Kedai Pernah Dekat menyediakan WiFi gratis dan musholla. Untuk acara tersedia proyektor yang dapat digunakan sesuai ketersediaan. Kebutuhan teknis acara sebaiknya dikonfirmasi ketika melakukan reservasi.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Metode pembayaran apa yang tersedia dan apakah pesanan bisa diubah?</summary>
+            <p>Pembayaran dilakukan di outlet pada hari kunjungan menggunakan cash, QRIS, atau kartu debit. Jumlah tamu dan pesanan masih dapat ditambah atau diubah; mohon konfirmasikan perubahan sesegera mungkin agar tempat dan pesanan dapat disiapkan.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Apakah Kedai Pernah Dekat melayani pemesanan dan pengiriman online?</summary>
+            <p>Ya. Pemesanan makanan secara online dan layanan pengiriman tersedia melalui GoFood, GrabFood, dan ShopeeFood. Cari Kedai Pernah Dekat di aplikasi pilihan Anda untuk melihat menu, harga, dan jangkauan pengiriman terbaru.</p>
+          </details>
+          <details class="faq-item" name="faq-kedai">
+            <summary>Apa menu terlaris di Kedai Pernah Dekat?</summary>
+            <p>Menu terlaris Kedai Pernah Dekat adalah Menu Paket. Pilihan ini cocok untuk pengunjung yang ingin memesan makanan dan minuman sekaligus, termasuk untuk kebutuhan reservasi perorangan maupun acara bersama.</p>
+          </details>
         </div>
       </section>
 
@@ -386,7 +457,7 @@
           <p class="eyebrow">Lokasi dan reservasi</p>
           <h2 id="location-title">Mampir ke Pernah Dekat di Manyar.</h2>
           <p>
-            Kami berada di Jalan Raya Manyar No. 29, Surabaya. Buka setiap hari sampai pukul 02.00
+            Kami berada di Jl. Raya Manyar No. 29, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60284. Buka setiap hari sampai pukul 02.00
             untuk Anda yang butuh ruang kerja, ruang temu, atau tempat melepas penat.
           </p>
           <form class="reservation-form" id="reservationForm">
@@ -469,7 +540,7 @@
         <address class="nap-card">
           <span>Info Kedai</span>
           <strong>Pernah Dekat</strong>
-          <p>Jalan Raya Manyar No. 29, Surabaya, Jawa Timur 60284</p>
+          <p>Jl. Raya Manyar No. 29, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60284</p>
           <a href="tel:+6282289988224">0822-8998-8224</a>
           <p>Jam Buka: Senin - Minggu, 10.00 pagi - 02.00 dini hari</p>
         </address>
@@ -479,7 +550,7 @@
     <footer class="site-footer">
       <div class="footer-brand">
         <img class="footer-logo" src="assets/logo-pernah-dekat.webp" alt="Pernah Dekat" width="204" height="100" />
-        <p>Jalan Raya Manyar No. 29, Surabaya, Jawa Timur 60284</p>
+        <p>Jl. Raya Manyar No. 29, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60284</p>
         <p>Telepon: <a href="tel:+6282289988224">0822-8998-8224</a></p>
         <div class="footer-actions">
           <a class="footer-button" href="http://wa.me/6282289988224" target="_blank" rel="noreferrer">Reservasi</a>

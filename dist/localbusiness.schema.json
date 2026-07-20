@@ -3,16 +3,20 @@
   "@type": "CafeOrCoffeeShop",
   "@id": "https://pernahdekat.com/#localbusiness",
   "name": "Pernah Dekat",
-  "description": "Coffee shop, cafe, dan kopitiam di kawasan Manyar, Surabaya untuk kerja fokus, komunitas, dan nongkrong sampai larut malam.",
+  "alternateName": "Kedai Pernah Dekat",
+  "description": "Kedai Pernah Dekat selalu menemani dengan santapan dalam setiap situasi hidupmu.",
   "url": "https://pernahdekat.com/",
-  "image": "https://pernahdekat.com/assets/pernah-dekat-hero.webp",
+  "image": "https://pernahdekat.com/assets/Bangunan.webp",
   "telephone": "+6282289988224",
   "openingDate": "2024-08-10",
   "servesCuisine": ["Coffee", "Kopitiam", "Indonesian"],
   "priceRange": "$$",
+  "acceptsReservations": true,
+  "paymentAccepted": "Cash, QRIS, Debit",
+  "currenciesAccepted": "IDR",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Jalan Raya Manyar No. 29",
+    "streetAddress": "Jl. Raya Manyar No. 29, Menur Pumpungan, Kec. Sukolilo",
     "addressLocality": "Surabaya",
     "addressRegion": "Jawa Timur",
     "postalCode": "60284",
@@ -26,8 +30,14 @@
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      "opens": "10:00",
+      "opens": "00:00",
       "closes": "02:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "10:00",
+      "closes": "23:59"
     }
   ],
   "sameAs": [
@@ -40,17 +50,27 @@
   "amenityFeature": [
     {
       "@type": "LocationFeatureSpecification",
-      "name": "Lantai 2 indoor AC untuk nugas dan kerja fokus",
+      "name": "Lantai 2 ber-AC dan non-smoking",
       "value": true
     },
     {
       "@type": "LocationFeatureSpecification",
-      "name": "Lantai 3 smoking indoor",
+      "name": "Lantai 3 ber-AC dan smoking",
       "value": true
     },
     {
       "@type": "LocationFeatureSpecification",
-      "name": "Area event di lantai 2 dan lantai 3",
+      "name": "WiFi gratis",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Musholla",
+      "value": true
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      "name": "Proyektor untuk acara",
       "value": true
     }
   ],
