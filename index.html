@@ -30,7 +30,7 @@
     <link rel="alternate" hreflang="id-ID" href="https://pernahdekat.com/" />
     <link rel="alternate" hreflang="en" href="https://pernahdekat.com/en/" />
     <link rel="alternate" hreflang="x-default" href="https://pernahdekat.com/" />
-    <link rel="preload" as="image" href="assets/pernah-dekat-hero.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/Mie Kuah Ayam Hainan.webp" fetchpriority="high" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
@@ -167,29 +167,19 @@
     </header>
 
     <main id="home">
-      <section class="hero" aria-label="Pernah Dekat cafe di Manyar Surabaya">
-        <img
-          class="hero-image"
-          src="assets/pernah-dekat-hero.webp"
-          alt="Suasana pengunjung bekerja dan berbincang di coffee shop Pernah Dekat"
-          width="1536"
-          height="1024"
-          fetchpriority="high"
-        />
-        <div class="hero-shade"></div>
+      <section class="hero" aria-label="Pernah Dekat cafe untuk nongkrong malam di Manyar Surabaya">
         <div class="hero-content">
-          <p class="eyebrow">Coffee shop dan kopitiam di Manyar, Surabaya</p>
-          <h1>Ruang Temu dan Cerita di Manyar.</h1>
-          <p class="hero-copy">
-            Pernah Dekat adalah cafe dan kopitiam di Manyar, Surabaya. Lebih dari sekadar seduhan
-            kopi, kami adalah saksi untuk setiap tawa, kolaborasi, dan obrolan yang pernah dekat.
-          </p>
+          <h1 class="hero-headline"><span>Ngobrol</span><span>Sampai</span><span class="accent">Lupa</span><span class="accent">Waktu</span></h1>
+          <div class="hero-rule" aria-hidden="true"></div>
+          <p class="hero-copy">Reservasi gampang,<br />rasanya nggak bohong.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#fasilitas">Mari Merapat</a>
-            <a class="button secondary" href="#menu">
-              Lihat Menu
-            </a>
+            <a class="button primary hero-reserve" href="#lokasi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M3.5 9.5h17M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2Zm3 9h2v2H8Zm6 0h2v2h-2Zm-6 4h2v2H8Zm6 0h2v2h-2Z" /></svg>Reservasi</a>
           </div>
+        </div>
+        <div class="hero-visual">
+          <p class="hero-japanese" lang="ja" aria-hidden="true">&#20210;&#12364;&#33391;&#12363;&#12387;&#12383;</p>
+          <img class="hero-gate" src="assets/Logo Gerbang.png" alt="" width="2250" height="2250" />
+          <img class="hero-dish" src="assets/Mie Kuah Ayam Hainan.webp" alt="Mie kuah ayam Hainan dengan telur dan sayuran di Pernah Dekat" width="1080" height="1920" fetchpriority="high" />
         </div>
         <aside class="hero-strip" aria-label="Ringkasan Pernah Dekat">
           <div>
@@ -228,6 +218,8 @@
         </div>
       </section>
 
+      <figure class="story-building"><img src="assets/Bangunan.webp" alt="Fasad merah, putih, dan biru kedai Pernah Dekat di Jalan Raya Manyar Surabaya" width="1920" height="2560" loading="lazy" /></figure>
+
       <section class="section facilities" id="fasilitas" aria-labelledby="facilities-title">
         <div class="section-heading">
           <p class="eyebrow">The space</p>
@@ -237,7 +229,7 @@
         <figure class="space-visual">
           <img
             src="assets/the-space.webp"
-            alt="Ilustrasi sementara suasana ruang indoor Pernah Dekat untuk nugas, smoking indoor, dan event"
+            alt="Suasana ruang indoor Pernah Dekat untuk nugas, smoking indoor, dan event"
             width="1536"
             height="1024"
             loading="lazy"
@@ -397,9 +389,82 @@
             Kami berada di Jalan Raya Manyar No. 29, Surabaya. Buka setiap hari sampai pukul 02.00
             untuk Anda yang butuh ruang kerja, ruang temu, atau tempat melepas penat.
           </p>
-          <a class="button primary" href="http://wa.me/6282289988224" target="_blank" rel="noreferrer">
-            Amankan Mejamu Hari Ini
-          </a>
+          <form class="reservation-form" id="reservationForm">
+            <div class="form-group">
+              <label for="resName">Nama <span class="required">*</span></label>
+              <input type="text" id="resName" name="name" required placeholder="Nama lengkap Anda" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resDate">Tanggal</label>
+                <input type="date" id="resDate" name="date" />
+              </div>
+              <div class="form-group">
+                <label for="resTime">Jam</label>
+                <select id="resTime" name="time">
+                  <option value="10:00">10:00</option>
+                  <option value="10:30">10:30</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                  <option value="12:00">12:00</option>
+                  <option value="12:30">12:30</option>
+                  <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="14:30">14:30</option>
+                  <option value="15:00">15:00</option>
+                  <option value="15:30">15:30</option>
+                  <option value="16:00">16:00</option>
+                  <option value="16:30">16:30</option>
+                  <option value="17:00">17:00</option>
+                  <option value="17:30">17:30</option>
+                  <option value="18:00" selected>18:00</option>
+                  <option value="18:30">18:30</option>
+                  <option value="19:00">19:00</option>
+                  <option value="19:30">19:30</option>
+                  <option value="20:00">20:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:00">21:00</option>
+                  <option value="21:30">21:30</option>
+                  <option value="22:00">22:00</option>
+                  <option value="22:30">22:30</option>
+                  <option value="23:00">23:00</option>
+                  <option value="23:30">23:30</option>
+                  <option value="00:00">00:00</option>
+                  <option value="00:30">00:30</option>
+                  <option value="01:00">01:00</option>
+                  <option value="01:30">01:30</option>
+                  <option value="02:00">02:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resGuests">Jumlah Orang</label>
+                <select id="resGuests" name="guests">
+                  <option value="1-2 Orang" selected>1-2 Orang</option>
+                  <option value="3-4 Orang">3-4 Orang</option>
+                  <option value="5-8 Orang">5-8 Orang</option>
+                  <option value="8-12 Orang">8-12 Orang</option>
+                  <option value="12+ Orang">12+ Orang</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="resArea">Area Meja</label>
+                <select id="resArea" name="area">
+                  <option value="Lantai 2 - Indoor AC">Lantai 2 - Indoor AC</option>
+                  <option value="Lantai 3 - Smoking Indoor">Lantai 3 - Smoking Indoor</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="resNotes">Catatan</label>
+              <textarea id="resNotes" name="notes" rows="3" placeholder="Catatan tambahan (opsional)"></textarea>
+            </div>
+            <button type="submit" class="button primary form-submit-btn">
+              Kirim Reservasi ke WhatsApp
+            </button>
+          </form>
         </div>
         <address class="nap-card">
           <span>Info Kedai</span>
